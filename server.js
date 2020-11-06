@@ -4,7 +4,7 @@ const fs = require("fs");
 
 //our instacne of express class object
 const app = express();
-const PORT = 7777;
+const PORT = process.env.PORT || 7777;
 
 //body parsers
 app.use(express.urlencoded({extended: true}));
